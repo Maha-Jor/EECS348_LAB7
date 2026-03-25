@@ -3,7 +3,6 @@ CFLAGS = -Wall -Werror -std=c11
 
 
 main: main.cpp
-	$(CC) $(CFLAGS) -o main main.cpp
-
+	g++ -std=c++11 main.cpp -o main
 clean:
-	rm -f main
+	rm -f *.o main
